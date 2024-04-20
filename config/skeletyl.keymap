@@ -110,12 +110,14 @@
             bindings = <&to_second_lang>;
             key-positions = <32 33>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         to_qwerty_lang {
             bindings = <&to_qwerty>;
             key-positions = <32 33>;
             layers = <8>;
+            timeout-ms = <50>;
         };
     };
 
