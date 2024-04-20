@@ -127,6 +127,22 @@
         };
     };
 
+    macros {
+        to_second_lang: to_second_lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 8 &kp LS(LC(NUMBER_2))>;
+            label = "TO_SECOND_LANG";
+        };
+
+        to_qwerty: to_qwerty {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 8 &kp LS(LC(NUMBER_1))>;
+            label = "TO_QWERTY";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
