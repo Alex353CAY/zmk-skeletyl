@@ -115,7 +115,7 @@
 
         to_qwerty_lang {
             bindings = <&to_qwerty>;
-            key-positions = <31 34>;
+            key-positions = <33 32>;
             layers = <8>;
             timeout-ms = <50>;
         };
