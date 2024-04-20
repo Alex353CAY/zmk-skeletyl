@@ -106,10 +106,32 @@
             timeout-ms = <150>;
         };
 
-        change_layout {
-            bindings = <&tog 8>;
+        to_secondary_lang {
+            bindings = <&to_second_lang>;
             key-positions = <32 33>;
             layers = <0>;
+        };
+
+        to_qwerty_lang {
+            bindings = <&to_qwerty>;
+            key-positions = <32 33>;
+            layers = <8>;
+        };
+    };
+
+    macros {
+        to_second_lang: to_second_lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &tog 8>;
+            label = "TO_SECOND_LANG";
+        };
+
+        to_qwerty: to_qwerty {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &tog 0>;
+            label = "TO_QWERTY";
         };
     };
 
