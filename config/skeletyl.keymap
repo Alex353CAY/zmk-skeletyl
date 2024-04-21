@@ -202,19 +202,19 @@
 
         Button {
             bindings = <
-&kp LC(Z)  &kp LC(X)      &kp LC(C)  &kp LC(V)  &kp LS(LC(Z))  &none  &trans     &none      &none     &none
-&kp LGUI   &kp LALT       &kp LCTRL  &kp LSHFT  &none          &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-&none      &kp LC(LS(F))  &kp LC(F)  &none      &none          &none  &trans     &none      &none     &none
-&none      &none          &none      &none      &none          &none
+&kp LC(Z)  &kp LC(X)  &kp LC(C)            &kp LC(V)  &kp LS(LC(Z))  &none  &none      &none      &none     &none
+&kp LGUI   &kp LALT   &kp LCTRL            &kp LSHFT  &none          &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+&none      &none      &mt RS(RC(F)) RC(F)  &none      &none          &none  &none      &none      &none     &none
+&none      &none      &none                &none      &none          &none
             >;
         };
 
         Gaming {
             bindings = <
-&kp Q      &kp W      &kp E           &kp R      &kp T      &kp Y      &kp U  &kp I    &kp O       &kp P
-&kp A      &kp S      &kp D           &kp F      &kp G      &kp H      &kp J  &kp K    &kp L       &kp GRAVE
-&kp Z      &kp X      &kp C           &kp V      &kp B      &kp N      &kp M  &kp TAB  &kp ESCAPE  &none
-&kp SPACE  &kp LCTRL  &kp LEFT_SHIFT  &kp LSHFT  &kp LCTRL  &kp SPACE
+&kp Q      &kp W           &kp E             &kp R              &kp T            &kp Y      &kp U  &kp I    &kp O       &kp P
+&kp A      &kp S           &kp D             &kp F              &kp G            &kp H      &kp J  &kp K    &kp L       &kp GRAVE
+&kp Z      &kp X           &kp C             &kp V              &kp B            &kp N      &kp M  &kp TAB  &kp ESCAPE  &none
+&kp SPACE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp SPACE
             >;
         };
 
@@ -223,7 +223,7 @@
 &kp Q                   &kp W            &kp E               &kp R             &kp T            &kp Y                &kp U              &kp I                &kp O            &kp P
 &hmp LEFT_GUI A         &hm LEFT_ALT S   &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G            &kp H                &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hmp RIGHT_GUI SEMICOLON
 &kp Z                   &kp X            &kp C               &kp V             &kp B            &kp N                &kp M              &kp COMMA            &kp DOT          &kp FSLH
-&lt 2 LA(LEFT_BRACKET)  &lt 1 LS(SPACE)  &lt 6 TAB           &lt 4 ENTER       &lt 5 BACKSPACE  &lt 5 RIGHT_BRACKET
+&lt 2 LA(LEFT_BRACKET)  &lt 1 LS(SPACE)  &lt 6 TAB           &lt 4 ENTER       &lt 5 BACKSPACE  &lt 3 RIGHT_BRACKET
             >;
         };
     };
