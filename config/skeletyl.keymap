@@ -133,10 +133,10 @@
 
         gaming_qwerty {
             bindings = <
-&kp Q      &kp W       &kp E      &kp R             &kp T          &kp Y       &kp U              &kp I      &kp O    &kp P
-&kp A      &kp S       &kp D      &hm LEFT_SHIFT F  &kp G          &kp H       &hm RIGHT_SHIFT J  &kp K      &kp L    &kp SEMICOLON
-&kp Z      &kp X       &kp C      &kp V             &kp B          &kp N       &kp M              &kp COMMA  &kp DOT  &to_layer__tap 7 SLASH
-&kp SPACE  &kp ESCAPE  &kp ENTER  &kp ENTER         &kp BACKSPACE  &kp DELETE
+&kp Q      &kp W       &kp E    &kp R             &kp T          &kp Y       &kp U              &kp I      &kp O    &kp P
+&kp A      &kp S       &kp D    &hm LEFT_SHIFT F  &kp G          &kp H       &hm RIGHT_SHIFT J  &kp K      &kp L    &kp SEMICOLON
+&kp Z      &kp X       &kp C    &kp V             &kp B          &kp N       &kp M              &kp COMMA  &kp DOT  &to_layer__tap 7 SLASH
+&kp SPACE  &kp ESCAPE  &kp TAB  &kp ENTER         &kp BACKSPACE  &kp DELETE
             >;
         };
     };
