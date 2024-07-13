@@ -115,10 +115,10 @@
 
         gaming_pad {
             bindings = <
-&hmp TAB T     &kp Q           &kp W             &kp E      &mt N1 R  &kp Y       &kp U  &kp I      &kp O    &kp P
-&hmp ESCAPE G  &kp A           &kp S             &kp D      &mt N2 F  &kp H       &kp J  &kp K      &kp L    &kp SEMI
-&lt 8 B        &kp Z           &kp X             &kp C      &mt N3 V  &kp N       &kp M  &kp COMMA  &kp DOT  &to_layer__tap 9 SLASH
-&kp SPACE      &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp ENTER  &kp BSPC  &kp DELETE
+&kt T      &kp Q           &kp W             &kp E      &kp R       &mt N1 Y  &mt N2 U  &mt N3 I      &kp O    &kp P
+&kp G      &kp A           &kp S             &kp D      &kp F       &mt N4 H  &mt N5 J  &mt N6 K      &kp L    &kp SEMI
+&lt 8 B    &kp Z           &kp X             &kp C      &kp V       &mt N7 N  &mt N8 M  &mt N9 COMMA  &kp DOT  &to_layer__tap 9 SLASH
+&kp SPACE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp ENTER  &kp ESCAPE  &kp TAB
             >;
         };
 
