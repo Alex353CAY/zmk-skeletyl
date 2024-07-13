@@ -36,6 +36,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        gaming_mode {
+            bindings = <&tog 7>;
+            key-positions = <20 29>;
+            layers = <0 7>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -79,7 +89,7 @@
             bindings = <
 &none                    &kp LEFT_PARENTHESIS   &mt QUESTION COLON       &kp RIGHT_PARENTHESIS  &none         &none  &none  &none      &none  &none
 &kp PLUS                 &kp LEFT_BRACE         &mt DOT SEMICOLON        &kp RIGHT_BRACE        &kp ASTERISK  &none  &none  &kp ENTER  &none  &none
-&mt MINUS UNDER          &kp LEFT_BRACKET       &mt GRAVE DOUBLE_QUOTES  &kp RIGHT_BRACKET      &kp SLASH     &none  &none  &none      &none  &none
+&mt UNDERSCORE MINUS     &kp LEFT_BRACKET       &mt GRAVE DOUBLE_QUOTES  &kp RIGHT_BRACKET      &kp SLASH     &none  &none  &none      &none  &none
 &mt AMPERSAND LESS_THAN  &mt EXCLAMATION EQUAL  &mt PIPE GREATER_THAN    &none                  &none         &none
             >;
         };
