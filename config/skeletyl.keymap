@@ -52,10 +52,10 @@
 
         qwerty {
             bindings = <
-&kp Q            &kp W            &kp E        &kp R             &kp T            &kp Y         &kp U              &kp I      &kp O            &kp P
-&hmp LEFT_GUI A  &hmp LEFT_ALT S  &kp D        &hm LEFT_SHIFT F  &kp G            &kp H         &hm RIGHT_SHIFT J  &kp K      &hm RIGHT_ALT L  &hmp RIGHT_GUI SEMICOLON
-&kp Z            &kp X            &kp C        &kp V             &kp B            &kp N         &kp M              &kp COMMA  &kp DOT          &kp FSLH
-&lt 3 ESCAPE     &lt 2 TAB        &lt 1 ENTER  &lt 4 ENTER       &lt 5 BACKSPACE  &lt 6 DELETE
+&kp Q            &kp W           &kp E               &kp R             &kp T            &kp Y         &kp U              &kp I                &kp O            &kp P
+&hmp LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G            &kp H         &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hmp RIGHT_GUI SEMICOLON
+&kp Z            &kp X           &kp C               &kp V             &kp B            &kp N         &kp M              &kp COMMA            &kp DOT          &kp FSLH
+&lt 3 ESCAPE     &lt 2 TAB       &lt 1 ENTER         &lt 4 ENTER       &lt 5 BACKSPACE  &lt 6 DELETE
             >;
         };
 
@@ -97,10 +97,10 @@
 
         button {
             bindings = <
-&none      &none      &kp LC(A)            &none          &none  &none  &none  &none  &none  &none
-&none      &kp LC(Z)  &mt LS(LC(F)) LC(F)  &kp LC(LS(Z))  &none  &none  &none  &none  &none  &none
-&none      &none      &none                &none          &none  &none  &none  &none  &none  &none
-&kp LC(X)  &kp LC(C)  &kp LC(V)            &none          &none  &none
+&none      &kp LC(Z)  &kp LC(A)  &kp LC(LS(Z))        &none  &none  &none  &none  &none  &none
+&none      &none      &kp LC(A)  &mt LC(LS(F)) LC(F)  &none  &none  &none  &none  &none  &none
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)            &none  &none  &none  &none  &none  &none
+&kp LC(X)  &kp LC(C)  &kp LC(V)  &none                &none  &none
             >;
         };
 
