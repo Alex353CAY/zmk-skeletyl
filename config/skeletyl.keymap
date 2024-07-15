@@ -106,10 +106,10 @@
 
         button {
             bindings = <
-&none      &kp LC(Z)  &kp LC(A)  &kp LC(LS(Z))  &none  &none  &none  &none  &none  &none
-&none      &none      &kp LC(A)  &kp LC(F)      &none  &none  &none  &none  &none  &none
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)      &none  &none  &none  &none  &none  &none
-&kp LC(X)  &kp LC(C)  &kp LC(V)  &none          &none  &none
+&none                   &kp LC(Z)    &kp LC(A)                &kp LC(LS(Z))  &none  &none  &none  &none  &none  &none
+&none                   &none        &kp LC(A)                &none          &none  &none  &none  &none  &none  &none
+&kp LC(Z)               &kp LC(X)    &kp LC(C)                &kp LC(V)      &none  &none  &none  &none  &none  &none
+&kp LC(LG(LEFT_ARROW))  &kp LG(TAB)  &kp LC(LG(RIGHT_ARROW))  &none          &none  &none
             >;
         };
 
