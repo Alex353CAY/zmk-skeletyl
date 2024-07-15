@@ -30,41 +30,21 @@
         compatible = "zmk,combos";
 
         to_utils {
-            bindings = <&to 8>;
+            bindings = <&tog 6>;
             key-positions = <7 2 30 35>;
-            layers = <0 1>;
-        };
-
-        to_mac {
-            bindings = <&to 1>;
-            key-positions = <26 30 32>;
             layers = <0>;
-        };
-
-        to_windows {
-            bindings = <&to 0>;
-            key-positions = <33 35 1>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty {
-            bindings = <
-&kp Q            &kp W           &kp E               &kp R             &kp T          &kp Y      &kp U              &kp I                &kp O            &kp P
-&hmp LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G          &kp H      &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hmp RIGHT_GUI SEMICOLON
-&kp Z            &kp X           &kp C               &kp V             &kp B          &kp N      &kp M              &kp COMMA            &kp DOT          &kp FSLH
-&lt 4 ESCAPE     &lt 3 SPACE     &lt 2 TAB           &lt 5 ENTER       &kp BACKSPACE  &lt 6 DEL
-            >;
-        };
-
         qwerty_mac {
             bindings = <
 &kp Q            &kp W           &kp E               &kp R             &kp T          &kp Y      &kp U              &kp I                &kp O            &kp P
 &hmp LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G          &kp H      &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hmp RIGHT_GUI SEMICOLON
 &kp Z            &kp X           &kp C               &kp V             &kp B          &kp N      &kp M              &kp COMMA            &kp DOT          &kp FSLH
-&lt 4 ESCAPE     &lt 3 SPACE     &lt 2 TAB           &lt 5 ENTER       &kp BACKSPACE  &lt 7 DEL
+&lt 3 ESCAPE     &lt 2 SPACE     &lt 1 TAB           &lt 4 ENTER       &kp BACKSPACE  &lt 5 DEL
             >;
         };
 
@@ -97,28 +77,19 @@
 
         programming {
             bindings = <
-&kp GRAVE                &kp LEFT_PARENTHESIS   &kp DOUBLE_QUOTES      &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE  &none  &none  &none      &none  &none
-&kp PLUS                 &kp LEFT_BRACE         &kp COLON              &kp RIGHT_BRACE        &kp ASTERISK      &none  &none  &kp ENTER  &none  &none
-&mt UNDERSCORE MINUS     &kp LEFT_BRACKET       &kt QUESTION           &kp RIGHT_BRACKET      &kp SLASH         &none  &none  &none      &none  &none
-&mt AMPERSAND LESS_THAN  &mt EXCLAMATION EQUAL  &mt PIPE GREATER_THAN  &none                  &none             &none
-            >;
-        };
-
-        button {
-            bindings = <
-&none                   &kp LC(Z)    &kp LC(A)                &kp LC(LS(Z))  &none  &none  &none  &none  &none  &none
-&kp LG(A)               &kt LG(S)    &none                    &none          &none  &none  &none  &none  &none  &none
-&none                   &kp LG(X)    &kp LG(C)                &kp LG(V)      &none  &none  &none  &none  &none  &none
-&kp LC(LG(LEFT_ARROW))  &kp LG(TAB)  &kp LC(LG(RIGHT_ARROW))  &none          &none  &none
+&kp GRAVE                &kp LEFT_PARENTHESIS   &kp DOUBLE_QUOTES      &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE     &none  &none  &none      &none  &none
+&kp PLUS                 &kp LEFT_BRACE         &kp COLON              &kp RIGHT_BRACE        &kp ASTERISK         &none  &none  &kp ENTER  &none  &none
+&mt UNDERSCORE MINUS     &kp LEFT_BRACKET       &kt QUESTION           &kp RIGHT_BRACKET      &mt BACKSLASH SLASH  &none  &none  &none      &none  &none
+&mt AMPERSAND LESS_THAN  &mt EXCLAMATION EQUAL  &mt PIPE GREATER_THAN  &none                  &none                &none
             >;
         };
 
         button_mac {
             bindings = <
 &none               &kp LG(Z)         &kp LG(A)            &kp LS(LG(Z))  &none  &none  &none  &none  &none  &none
-&kp LG(A)           &none             &none                &kp LC(LG(F))  &none  &none  &none  &none  &none  &none
-&none               &kp LC(X)         &kp LC(C)            &kp LC(V)      &none  &none  &none  &none  &none  &none
-&kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &none          &none  &none
+&kp LG(A)           &kp LG(S)         &none                &kp LC(LG(F))  &none  &none  &none  &none  &none  &none
+&none               &kp LG(X)         &kp LG(C)            &kp LG(V)      &none  &none  &none  &none  &none  &none
+&kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &none          &none  &none
             >;
         };
 
