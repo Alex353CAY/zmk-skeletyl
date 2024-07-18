@@ -30,7 +30,7 @@
         compatible = "zmk,combos";
 
         to_utils {
-            bindings = <&tog 0>;
+            bindings = <&tog 8>;
             key-positions = <10 19 29 20>;
             layers = <0 1>;
         };
