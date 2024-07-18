@@ -32,11 +32,13 @@
         to_utils {
             bindings = <&tog 0>;
             key-positions = <10 19 29 20>;
+            layers = <0 1>;
         };
 
         clearBluetooth {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <35 34 30 31>;
+            layers = <8>;
         };
     };
 
