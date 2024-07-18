@@ -95,7 +95,7 @@
 &mt DOLLAR GRAVE  &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES         &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE  &none  &none      &none      &none     &none
 &none             &kp LEFT_BRACE        &kp COLON                 &kp RIGHT_BRACE        &none             &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
 &kp PIPE          &kp LEFT_BRACKET      &mt QUESTION EXCLAMATION  &kp RIGHT_BRACKET      &kp AMPERSAND     &none  &none      &none      &none     &none
-&kp EQUAL         &mt SPACE UNDERSCORE  &kp GREATER_THAN          &none                  &none             &none
+&kp EQUAL         &mt UNDERSCORE SPACE  &kp GREATER_THAN          &none                  &none             &none
             >;
         };
 
