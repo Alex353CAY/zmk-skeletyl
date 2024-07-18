@@ -46,7 +46,8 @@
         toggle_os: toggle_os {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog 0>;
+            bindings = <&macro_press>, <&tog 0>;
+
             label = "TOGGLE_OS";
         };
     };
