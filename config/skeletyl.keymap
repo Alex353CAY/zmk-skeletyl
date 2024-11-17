@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 / {
@@ -98,19 +97,19 @@
 
         programming {
             bindings = <
-&mt DOLLAR GRAVE  &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES         &kp RIGHT_PARENTHESIS  &mt AT SINGLE_QUOTE  &none  &none      &none      &none     &none
-&kp PIPE          &kp LEFT_BRACE        &kp COLON                 &kp RIGHT_BRACE        &kt AMPERSAND        &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-&none             &kp LEFT_BRACKET      &mt QUESTION EXCLAMATION  &kp RIGHT_BRACKET      &none                &none  &none      &none      &none     &none
-&kp EQUAL         &mt UNDERSCORE SPACE  &kp GREATER_THAN          &none                  &none                &none
+&mt DOLLAR GRAVE  &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES         &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE  &none  &none      &none      &none     &none
+&none             &kp LEFT_BRACE        &kp COLON                 &kp RIGHT_BRACE        &none             &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+&kp PIPE          &kp LEFT_BRACKET      &mt QUESTION EXCLAMATION  &kp RIGHT_BRACKET      &kp AMPERSAND     &none  &none      &none      &none     &none
+&kp EQUAL         &mt UNDERSCORE SPACE  &kp GREATER_THAN          &none                  &none             &none
             >;
         };
 
         button_linux {
             bindings = <
-&none            &none        &kp LG(A)          &none      &none          &none  &none      &none      &none     &none
-&kp LC(A)        &kp LC(S)    &none              &kp LC(F)  &none          &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-&kp LC(Z)        &kp LC(X)    &kp LC(C)          &kp LC(V)  &kp LC(LS(Z))  &none  &none      &none      &none     &none
-&kp LG(PAGE_UP)  &kp LA(TAB)  &kp LG(PAGE_DOWN)  &none      &none          &none
+&none                          &none        &kp LG(A)                &none      &none          &none  &none      &none      &none     &none
+&kp LC(A)                      &kp LC(S)    &none                    &kp LC(F)  &none          &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+&kp LC(Z)                      &kp LC(X)    &kp LC(C)                &kp LC(V)  &kp LC(LS(Z))  &none  &none      &none      &none     &none
+&mt LS(LA(TAB)) LG(PAGE_DOWN)  &kp LG(TAB)  &mt LA(TAB) LG(PAGE_UP)  &none      &none          &none
             >;
         };
 
