@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -56,6 +55,15 @@
         };
     };
 
+    macros {
+        equals_m: equalsMacro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp EQUAL>;
+            label = "EQUALSMACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -64,7 +72,7 @@
 &kp Q            &kp W           &kp E               &kp R             &kp T            &kp Y       &kp U              &kp I                &kp O            &kp P
 &hmp LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G            &kp H       &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hmp RIGHT_GUI SEMICOLON
 &lt 5 Z          &kp X           &kp C               &kp V             &kp B            &kp N       &kp M              &kp COMMA            &kp DOT          &lt 6 SLASH
-&kp TAB          &lt 3 ESC       &lt 4 SPACE         &lt 2 ENTER       &lt 1 BACKSPACE  &kt DELETE
+&kp TAB          &lt 3 ESC       &lt 4 SPACE         &lt 2 ENTER       &lt 1 BACKSPACE  &kp DELETE
             >;
         };
 
@@ -99,7 +107,7 @@
             bindings = <
 &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES     &kp DOT   &kp AMPERSAND  &kp TILDE              &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
 &kp EXCLAMATION  &kp MINUS      &kp PLUS          &mt LEFT_SHIFT EQUAL  &kp HASH  &kp PIPE       &mt RIGHT_SHIFT COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION
-&kp CARET        &kp SLASH      &kp ASTERISK      &kp BACKSLASH         &none     &none          &kp DOLLAR             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN
+&kp CARET        &kp SLASH      &kp ASTERISK      &kp BACKSLASH         &none     &equals_m      &kp DOLLAR             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN
 &none            &none          &none             &none                 &none     &none
             >;
         };
