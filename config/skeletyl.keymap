@@ -3,8 +3,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -87,10 +85,10 @@
 
         num {
             bindings = <
-&none     &none     &none      &none      &none  &kp PLUS      &kp N7  &kp N8        &kp N9      &kp MINUS
-&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp N0        &kp N4  &kp N5        &kp N6      &none
-&none     &none     &none      &none      &none  &kp ASTERISK  &kp N1  &mt COMMA N2  &mt DOT N3  &kp SLASH
-&none     &none     &none      &none      &none  &none
+&kp N1  &kp N2     &kp N3     &kp N4        &kp N5  &kp N6  &kp N7     &kp N8     &kp N9    &kp N0
+&none   &kp MINUS  &kp DOT    &kp PLUS      &none   &none   &kp LSHFT  &kp LCTRL  &kp LALT  &kp RIGHT_GUI
+&none   &kp SLASH  &kp COMMA  &kp ASTERISK  &none   &none   &none      &none      &none     &none
+&trans  &trans     &trans     &none         &none   &none
             >;
         };
 
@@ -105,10 +103,10 @@
 
         symbol {
             bindings = <
-&kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES     &kp DOT   &kp AMPERSAND  &kp TILDE              &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
-&kp EXCLAMATION  &kp MINUS      &kp PLUS          &mt LEFT_SHIFT EQUAL  &kp HASH  &kp PIPE       &mt RIGHT_SHIFT COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION
-&kp CARET        &kp SLASH      &kp ASTERISK      &kp BACKSLASH         &none     &equals_m      &kp DOLLAR             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN
-&none            &none          &none             &none                 &none     &none
+&kp GRAVE  &kp AT_SIGN   &kp DOUBLE_QUOTES  &kp DOLLAR     &kp SQT  &none  &kp PIPE         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE
+&kp HASH   &kp QUESTION  &kp UNDERSCORE     &kp EQUAL      &none    &none  &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT
+&none      &kp SLASH     &kp CARET          &kp BACKSLASH  &none    &none  &kp AMPERSAND    &kp LEFT_BRACE        &kp RIGHT_BRACE        &none
+&none      &none         &none              &none          &none    &none
             >;
         };
 
