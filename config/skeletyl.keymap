@@ -38,8 +38,7 @@
 
         clearBluetooth {
             bindings = <&bt BT_CLR_ALL>;
-            key-positions = <35 34 31 30>;
-            layers = <7>;
+            key-positions = <34 35 7 6>;
         };
 
         enter_macro {
@@ -50,6 +49,11 @@
         esc_macro {
             bindings = <&kp ESCAPE>;
             key-positions = <30 35>;
+        };
+
+        clearBluetoothLeft {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <31 30 2 3>;
         };
     };
 
