@@ -30,49 +30,10 @@
     combos {
         compatible = "zmk,combos";
 
-        clearBluetooth {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <34 35 7 6>;
-        };
-
-        clearBluetoothLeft {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <31 30 2 3>;
-        };
-
-        BT0 {
-            bindings = <&bt BT_SEL 0>;
-            key-positions = <34 33 31 32 0>;
-        };
-
-        BT1 {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <34 33 31 32 1>;
-        };
-
-        BT2 {
-            bindings = <&bt BT_SEL 2>;
-            key-positions = <2 31 34 33 32>;
-        };
-
-        BootLeft {
-            bindings = <&bootloader>;
-            key-positions = <0 10 20>;
-        };
-
-        BootRight {
-            bindings = <&bootloader>;
-            key-positions = <29 9 19>;
-        };
-
-        OUT_BLE_macro {
-            bindings = <&out OUT_BLE>;
-            key-positions = <4 5 3 6 2 7>;
-        };
-
-        OUT_USB_macro {
-            bindings = <&out OUT_USB>;
-            key-positions = <14 13 15 16 12 17>;
+        to_utils {
+            bindings = <&tog 7>;
+            key-positions = <10 20 19 29>;
+            layers = <0 7>;
         };
     };
 
@@ -153,10 +114,10 @@
 
         utils {
             bindings = <
-&bootloader   &none  &none  &none  &sys_reset  &none  &none         &none         &none         &bootloader
-&out OUT_USB  &none  &none  &none  &none       &none  &none         &none         &none         &out OUT_BLE
-&none         &none  &none  &none  &none       &none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
-&none         &none  &none  &none  &none       &none
+&bt BT_SEL 0  &bt BT_SEL 1  &none  &none  &out OUT_BLE  &out OUT_USB  &none  &none  &none  &none
+&none         &none         &none  &none  &none         &none         &none  &none  &none  &none
+&none         &none         &none  &none  &none         &none         &none  &none  &none  &none
+&bootloader   &none         &none  &none  &none         &bootloader
             >;
         };
     };
