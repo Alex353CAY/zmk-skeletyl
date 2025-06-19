@@ -63,6 +63,16 @@
             key-positions = <10 20 19 29>;
             layers = <0 7>;
         };
+
+        lang_change {
+            bindings = <&toRUmacro>;
+            key-positions = <19 31>;
+        };
+
+        lang_change_l {
+            bindings = <&toRUmacro>;
+            key-positions = <31 10>;
+        };
     };
 
     macros {
@@ -71,6 +81,14 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp EQUAL>;
             label = "EQUALSMACRO";
+        };
+
+        toRUmacro: toRUmacro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LG(SPACE)>, <&macro_press>, <&to 8>;
+
+            label = "TORUMACRO";
         };
     };
 
