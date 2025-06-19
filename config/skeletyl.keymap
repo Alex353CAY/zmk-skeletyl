@@ -25,6 +25,34 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        ru_b: ru_b {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RU_B";
+            #binding-cells = <0>;
+            bindings = <&kp KP_COMMA>, <&kp COMMA>;
+        };
+
+        ru_u: ru_u {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RU_U";
+            #binding-cells = <0>;
+            bindings = <&kp PERIOD>, <&kp KP_DOT>;
+        };
+
+        ru_zh: ru_zh {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RU_ZH";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&kp LEFT_BRACKET>;
+        };
+
+        ru_zhi_ea: ru_zhi_ea {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RU_ZHI_EA";
+            #binding-cells = <0>;
+            bindings = <&kp SEMICOLON>, <&kp SQT>;
+        };
     };
 
     combos {
@@ -118,6 +146,15 @@
 &none         &none         &none           &none  &none         &none         &none  &none  &none  &none
 &none         &none         &none           &none  &none         &none         &none  &none  &none  &none
 &bootloader   &none         &bt BT_CLR_ALL  &none  &none         &bootloader
+            >;
+        };
+
+        RU_LANG {
+            bindings = <
+&kp Q            &kp W           &kp E         &kp R             &kp T       &kp Y          &kp U              &kp I        &kp O            &kp P
+&hmp LEFT_WIN A  &hm LEFT_ALT S  &hm LCTRL D   &hm LEFT_SHIFT F  &kp G       &kp H          &hm RIGHT_SHIFT J  &hm RCTRL K  &hm RIGHT_ALT L  &ru_zhi_ea
+&kp Z            &kp X           &kp C         &kp V             &kp B       &kp N          &kp M              &ru_b        &ru_u            &kp RIGHT_BRACKET
+&lt 5 TAB        &lt 3 SPACE     &lt 4 ESCAPE  &lt 2 ENTER       &kp DELETE  &kp BACKSPACE
             >;
         };
     };
